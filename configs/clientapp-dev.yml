@@ -1,0 +1,29 @@
+#服务端口
+server:
+  port: 8082
+
+#spring:
+#  application:
+#    name: clientapp
+#
+#eureka:
+#  client:
+#    serviceUrl:
+#      defaultZone: http://localhost:8080/eureka/
+
+#consul配置
+spring:
+  cloud:
+    consul:
+      host: localhost
+      port: 8500
+      discovery:
+        service-name: consulclient
+
+#consul端点启用和暴露
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+
