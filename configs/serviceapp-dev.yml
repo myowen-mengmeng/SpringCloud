@@ -8,6 +8,12 @@ spring:
       port: 8500
       discovery:
         service-name: consulserver
+ #sleuth+zipkin实现链路追踪
+   zipkin:
+     base-url: http://localhost:8901
+   sleuth:
+     sampler:
+       percentage: 1.0   
 management:
   endpoints:
     web:
