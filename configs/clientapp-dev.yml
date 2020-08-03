@@ -20,11 +20,11 @@ spring:
       discovery:
         service-name: consulclient
  #sleuth+zipkin实现链路追踪
-   zipkin:
-     base-url: http://localhost:8901
-   sleuth:
-     sampler:
-       percentage: 1.0
+#    zipkin:
+#      base-url: http://localhost:8901
+#    sleuth:
+#      sampler:
+#        percentage: 1.0
 
 #consul端点启用和暴露
 management:
